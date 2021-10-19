@@ -55,7 +55,7 @@ public class AirportServiceImpl implements AirportService {
 	 * add a airport
 	 */
 	@Override
-	public ResponseEntity<?> addAirport(Airport airport) {
+	public ResponseEntity<Airport> addAirport(Airport airport) {
 		Optional<Airport> findById = airportDao.findById(airport.getAirportCode());
 		try {
 		if (!findById.isPresent()) {

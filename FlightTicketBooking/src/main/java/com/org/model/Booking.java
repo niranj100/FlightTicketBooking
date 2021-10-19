@@ -24,6 +24,13 @@ public class Booking {
 	private String bookingDate;
 	private int noOfPassengers;
 
+	public Booking(BigInteger bookingId, String bookingDate, int noOfPassengers) {
+		// TODO Auto-generated constructor stub
+		this.bookingId=bookingId;
+		this.bookingDate=bookingDate;
+		this.noOfPassengers=noOfPassengers;
+	}
+
 	public BigInteger getBookingId() {
 		return bookingId;
 	}
